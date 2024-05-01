@@ -1,0 +1,24 @@
+---
+const { PageID } = Astro.props;
+const activeClass = "on"; // For primary color replace with `active` class
+---
+
+<ul class="menu bg-base-100 w-full">
+  <li><a class="menu-item p-4" id="home" href="/">Inicio</a></li>
+  <li><a class="menu-item p-4" id="capitulo1" href="/capitulo1">Capitulo 1</a></li>
+  <li><a class="menu-item p-4" id="capitulo2" href="/capitulo2">Capitulo 2</a></li>
+  <li><a class="menu-item p-4" id="capitulo3" href="/capitulo3">Capitulo 3</a></li>
+  <li><a class="menu-item p-4" id="capitulo4" href="/capitulo4">Capitulo 4</a></li>
+  <li><a class="menu-item p-4" id="capitulo5" href="/capitulo5">Capitulo 5</a></li>
+  <li><a class="menu-item p-4" id="capitulo6" href="/capitulo6">Capitulo 6</a></li>
+  <li><a class="menu-item p-4" id="capitulo7" href="/capitulo7">Capitulo 7</a></li>
+  <li><a class="menu-item p-4" id="capitulo8" href="/capitulo8">Capitulo 8</a></li>
+  <li><a class="menu-item p-4" id="capitulo9" href="/capitulo9">Capitulo 9</a></li>
+  <li><a class="menu-item p-4" id="capitulo10" href="/capitulo10">Capitulo 10</a></li>
+</ul>
+
+
+<script define:vars={{ sideBarActiveItemID: PageID, activeClass: activeClass }}>
+  const activeItemElem = document.getElementById(sideBarActiveItemID);
+  activeItemElem && activeItemElem.classList.add(activeClass);
+</script>

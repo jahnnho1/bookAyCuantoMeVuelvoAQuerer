@@ -1,0 +1,44 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import error from "../components/blog/error.astro";
+import info from "../components/blog/info.astro";
+import success from "../components/blog/success.astro";
+import warn from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import FriendCard from "../components/page/FriendCard.astro";
+
+<BaseLayout PageID="home">
+  <BaseCard title="home" image="/cap2.webp">
+    <div>
+      # 🧊 Ay Cuanto Me Vuelvo A Querer
+
+
+      <div class="bg-blue-100 p-4 rounded-md shadow-md  my-8">
+        <p class="text-lg text-black font-bold mb-2">¿Cuál es el nombre del protagonista?</p>
+        <p class="text-black-800 text-black"> El nombre del protagonista es Máximo.</p>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-md shadow-md my-8">
+        <p class="text-lg text-black font-bold mb-2">¿Cuál es el nombre de la amiga del protagonista?</p>
+        <p class="text-gray-800 text-black">El nombre de la amiga del protagonista es Soledad.</p>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-md shadow-md my-8">
+        <p class="text-lg text-black font-bold mb-2">¿Cuáles son algunas características psicológicas?</p>
+        <p class="text-gray-800 text-black">El personaje principal, Máximo, muestra características psicológicas como la valentía al enfrentar sus propios miedos y la empatía al intentar ayudar a su amiga.</p>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-md shadow-md my-8">
+        <p class="text-lg text-black font-bold mb-2"> ¿Qué sucedería si estuviera de cumpleaños todos los días, al igual que el personaje del cuento?</p>
+        <p class="text-gray-800 text-black">Sería genial al principio, con fiestas y regalos cada día. Pero después de un tiempo, podría ser aburrido y cansado. Además, no sería tan especial si siempre estuviera sucediendo.</p>
+      </div>
+
+      <div class="bg-blue-100 p-4 rounded-md shadow-md my-8">
+        <p class="text-lg text-black font-bold mb-2"> ¿Nombre del autor que escribio el libro?</p>
+        <p class="text-gray-800 text-black"> El nombre del autor es Mauricio Paredes.</p>
+      </div>
+
+    </div>
+
+  </BaseCard>
+</BaseLayout>

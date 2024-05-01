@@ -1,0 +1,80 @@
+import BaseLayout from "../layouts/BaseLayout.astro";
+import BaseCard from "../components/BaseCard.astro";
+import error from "../components/blog/error.astro";
+import info from "../components/blog/info.astro";
+import success from "../components/blog/success.astro";
+import warn from "../components/blog/warning.astro";
+import TimeLine from "../components/page/TimeLine.astro";
+import FriendCard from "../components/page/FriendCard.astro";
+
+<BaseLayout PageID="capitulo1">
+  <BaseCard title="capitulo1" image="/home.webp">
+    <div>
+      # 🧊 Ay Cuanto Me Vuelvo A Querer
+      <div className="flex justify-center">
+        <audio controls className="w-64">
+          <source src="capitulo1.ogg" type="audio/mpeg" />
+          Your browser does not support the audio element.
+        </audio>
+      </div>
+      <p class="text-lg font-bold mb-4">
+        Saber mucho puede llevarte al éxito, <em>pero ser sabio te llevará a la felicidad.</em>
+      </p>
+      <h2 class="text-2xl font-bold mb-2">Capítulo 1. Yo, de nuevo</h2>
+      <p class="mb-4">
+        ¡Ay, cuánto me quiero! Para ser sincero... Para ser sincero... ¡Para ser sincero, no lo sé! Antes estaba seguro de que me amaba, me adoraba, ¡me idolatraba! Pero ya no más. Ahora hasta hay
+        momentos en los que me canso de mí. Es verdad, lo prometo. ¡Es que siempre soy el mismo!
+      </p>
+      <p class="mb-4">A veces me gustaría ser alguien diferente y no la misma persona todo el tiempo. ¡Qué aburrido! Ya no quiero ser más yo... Pero entonces,</p>
+      <p class="mb-4">¿quién sería? ¿Tú? ¿Él, nosotros, vosotros, ellos”?</p>
+      <p class="mb-4">
+        Bueno, eso no lo sé. La pregunta importante acá es: ¿me quiero? ¿Sí o no? ¿Estoy seguro? ¿Sí o no? ¡Estoy confundido! ¡Qué terrible! ¡Ser o no ser, quererse o no quererse, esa es la cuestión!
+        ¿Me amo o me odio? ¿O las dos cosas al mismo tiempo? ¡No puede ser, eso sí que sería raro! Sentir cariño y desprecio a la vez por uno mismo. ¡Qué complicación! Esto es muy difícil de entender.
+        Y eso que yo entiendo muchas cosas. Por ejemplo, sé que un señor muy antiguo, que se llamaba Sócrates, dijo: “Conócete a ti mismo”. Yo me conocí y me caí tan bien que me hice mi mejor amigo.
+      </p>
+      <p class="mb-4">
+        Pero esos eran otros tiempos, ahora he descubierto que quererse a uno mismo es un trabajo muy difícil. Hay cosas que sí se pueden hacer, como aplaudirme por ser tan fabuloso. Pero hay otras
+        que no, por ejemplo, cuando trato de darme besos y no logro alcanzar mi mejilla con los labios. Solo consigo parecer un elefante con la trompa chueca.
+      </p>
+      <p class="mb-4">
+        Sin ir más lejos, hoy en la mañana, después de gastar tanto tiempo en pensar si me quería o no, me enojé. ¿Con quién? ¡Conmigo, por supuesto! Estaba tan furioso que fui al espejo y me hice
+        muecas, me saqué la lengua y, por si fuera poco, me tiré las orejas para verme espantoso y asustarme mucho. Pero claro, ese otro yo es simplemente mi reflejo en el espejo y me copia todo lo
+        que hago. Sin embargo, hay una diferencia: él tiene que quedarse dentro del espejo, en cambio yo puedo ir a muchas partes. Aunque quizás dentro del espejo haya un mundo que yo no conozco y él
+        sí... Como castigo por pelear conmigo mismo decidí encerrarme en el ropero. ¡Fue imposible! Primero me paré dentro, pero nadie cerraba la puerta por fuera. Después salí y empujé la puerta con
+        fuerza. Me gritaba a mí mismo: «¡Sufre, sufre!», pero no sufría nada, porque en realidad no estaba encerrado. En vez de sufrir me dio más y más risa. Luego me quise esconder de mí mismo. Elegí
+        el lugar perfecto: debajo de la cama, Allí nunca me encontraría. Cerré los ojos, conté hasta diez, los abrí de nuevo... ¡y ahí estaba! Me descubrí inmediatamente. ¡Qué fastidio! A veces es muy
+        malo ser tan bueno para jugar a las escondidas.
+      </p>
+      <p class="mb-4">
+        Después me hice la ley del hielo y no me hablé por un montón de tiempo. Creo que fueron como veintiún segundos. Pero no resistí más, porque necesitaba hablar conmigo para contarme el gran
+        problema que tenía, es decir, mi falta de amor por mí mismo. Además, si resulta que no soy mi amigo, por lo menos no quiero convertirme en mi enemigo. ¡Sería terrible! ¡Yo, enemigo mío! Me
+        haría la vida imposible. Creo que nadie sería capaz de soportar a alguien como yo, mucho menos yo mismo.
+      </p>
+      <p class="mb-4">
+        Decidí salir al jardín para pensar mejor estos temas con mi superdotado cerebro y mi humilde corazón. Me sentía muy deprimido por mi crisis de identidad. Caminé por el pasto, paso tras paso,
+        lentamente, hasta llegar a mi árbol, pero no tuve fuerzas para subir, así que me quedé apoyado en él, sujetándome del tronco con los brazos abiertos para no caerme al suelo de tan triste que
+        estaba.
+      </p>
+      <p class="mb-4">—¿Estás abrazando al árbol? —preguntó la voz de esa niña que yo conocía. Era mi vecina, que aún no me decía su nombre.</p>
+      <p class="mb-4">—¿Abrazando al árbol? —le pregunté yo de vuelta, muy extrañado. ¿Por qué querría abrazar a un árbol? Mejor me abrazo a mí mismo y listo.</p>
+      <p class="mb-4">Ella trató de ordenar su pelo, que inmediatamente le desobedeció y volvió a quedar igual de desordenado que al principio.</p>
+      <p class="mb-4">—No —me dijo sonriendo—. Se abrazan los árboles para recibir su energía. Es el poder cósmico de la naturaleza, como dice mi mamá.</p>
+      <p class="mb-4">Yo me eché a reír a carcajadas.</p>
+      <p class="mb-4">— ¡Tú eres muy cósmica, me haces reír! —exclamé, sin soltar el tronco, para que no se fuera a caer el árbol (no yo).</p>
+      <p class="mb-4">—No comprendes —me explicó ella— , no dije “cómico”, que quiere decir divertido, sino “cósmico”, que significa que es del cosmos, del universo.</p>
+      <p class="mb-4">— Ahhh, está bien — le dije para que se quedara tranquila. Esa niña habla muy raro y, más encima, pretende que uno entienda las cosas extrañas que dice.</p>
+      <p class="mb-4">Ella abrazó el árbol y cerró los ojos.</p>
+      <p class="mb-4">—Mira, concéntrate como yo y pronto vas a sentir un hormigueo en el cuerpo.</p>
+      <p class="mb-4">
+        Como soy muy educado, le hice caso. ¡Y fue increíble! Pronto sentí un pequeño hormigueo. Después un hormigueo más grande. ¡Y después una picazón terrible! Abrí los ojos y un montón de hormigas
+        habían caminado desde el tronco y se habían metido por debajo de mi ropa.
+      </p>
+      <p class="mb-4">—¡Aaaayyy, mamá! —grité con todas mis fuerzas.</p>
+      <p class="mb-4">—Ups — dijo ella mientras yo corría dando vueltas, rascándome de pies a cabeza.</p>
+      <p class="mb-4">Al final logré sacudirme las hormigas y quedé agotado.</p>
+      <p class="mb-4">—Creo que esto de la energía cósmica no es para mí.</p>
+      <p class="mb-4">—Bueno —dijo ella, sonriendo—, fue cósmica y también un poco cómica.</p>
+      <p>Y los dos nos reímos hasta caernos sobre el pasto. Por suerte, el árbol se quedó en su lugar y no nos cayó encima.</p>
+    </div>
+  </BaseCard>
+</BaseLayout>

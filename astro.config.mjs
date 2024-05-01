@@ -6,6 +6,8 @@ import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import netlify from "@astrojs/netlify";
 
+import vercel from "@astrojs/vercel/serverless";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://www.github.com/jahnnho',
@@ -24,5 +26,5 @@ export default defineConfig({
     }, rehypeKatex]
   },
   output: "server",
-  adapter: netlify()
+  adapter: vercel()
 });

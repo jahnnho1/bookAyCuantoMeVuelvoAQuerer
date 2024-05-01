@@ -5,8 +5,8 @@ import tailwind from "@astrojs/tailwind";
 import remarkMath from 'remark-math';
 import rehypeKatex from 'rehype-katex';
 import netlify from "@astrojs/netlify";
-
 import vercel from "@astrojs/vercel/serverless";
+
 
 // https://astro.build/config
 export default defineConfig({
@@ -26,5 +26,7 @@ export default defineConfig({
     }, rehypeKatex]
   },
   output: "server",
-  adapter: vercel()
+  adapter: netlify({
+    edgeMiddleware: true
+  }),
 });
